@@ -1,0 +1,20 @@
+{
+  "name": "loremcafe",
+  "version": "1.0.0",
+  "description": "Lorem cafe website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Mroz",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-ejs": "^3.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

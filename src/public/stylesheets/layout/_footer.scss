@@ -1,0 +1,10 @@
+footer{
+	position: absolute;
+	bottom:0;
+	left:0;
+	right:0;
+
+	display:block;
+	background-color: $text-color;
+	border-top: 1px solid $first-color;
+}

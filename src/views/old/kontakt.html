@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Witamy w Lorem Cafe | Kontakt</title>
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+
+</head>
+<body class="contact">
+
+	<header>
+		<nav> 
+			<p class="logo">Lorem Cafe  <i class="fa fa-coffee" aria-hidden="true"></i> | Kontakt </p>
+
+			<div id="menuToggle">
+				<input type="checkbox">
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul id="menuBookmarks">
+						<li><a id ="glowna" href="#" active>Strona Główna</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="galeria.html">Galeria</a></li>
+						<li><a href="">ABC Kawy</a></li>
+						<li><a href="opinie.html">Opinie</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+			</div>
+		</nav>		
+	</header>
+
+	<p class="text">
+		Chciałbyś zarezerwować miejsce ?<br>
+		Chcesz nam coś przekazać ?<br>
+		Skontaktuj się z nami!
+	</p>
+	
+	<div class="container">
+		<div class="map-wrap">
+			<div id="map"></div>
+			<div id="map-caption">
+				<h3>Dane kontaktowe :</h3><hr>
+				<p>
+					Warszawa, ul.Tralalala 2/3 <br>01-234
+					<br>Tel.123 - 456 - 789
+				</p>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<h3>Napisz Do Nas</h3><hr>
+				<form class="quote">
+					<div>
+						<label>Imię</label><br>
+						<input type="text" placeholder="Imię">
+					</div>
+					<div>
+						<label>Email</label><br>
+						<input type="text" placeholder="Email">
+					</div>
+					<div>
+						<label>Wiadomość</label><br>
+						<textarea placeholder="Wiadomość"></textarea>
+					</div>
+					<button class="button_1" type="submit">Wyślij</button>
+				</form>
+		</div>
+	</div>
+
+	<footer>
+		<p class="ft-left">
+			<b> Mrooz &copy; 2017 </b> 
+		</p> 
+		<p class="ft-right">
+			<a href="https://github.com/mroozspace"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+			<a href="https://www.linkedin.com/in/adrian-mr%C3%B3z-829bb113b/" class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+		</p> 
+	 </footer>
+
+<script>
+	 function initMap() {
+        var warsaw = {lat: 52.229852, lng: 21.011723};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: warsaw
+        });
+        var marker = new google.maps.Marker({
+          position: warsaw,
+          map: map
+        });
+      }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsWPruIwZ9f-o233lH5evUrn_HfuEz2tI&callback=initMap">
+    </script>
+
+</body>
+</html>
+
+
