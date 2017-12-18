@@ -1,10 +1,32 @@
 footer{
-	position: absolute;
+	position: relative;
+	text-transform: uppercase;
 	bottom:0;
 	left:0;
 	right:0;
-
 	display:block;
 	background-color: $text-color;
 	border-top: 1px solid $first-color;
+	height: 300px;
+	color:#fff;
+
+	#logo-ft{
+		@extend #logo;
+		margin:0 auto;
+	}
+
+	p{
+		margin:0 auto;
+		padding:0;
+	}
+	div{
+		position:relative;
+		margin-bottom:0;
+		padding:0;
+
+		display:block;
+		min-heigth:80px;
+		background-color: #000;
+		color: $first-color;
+	}
 }

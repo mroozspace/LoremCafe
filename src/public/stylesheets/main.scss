@@ -22,12 +22,9 @@
 
 @import 'components/buttons',
 		'components/grid',
-		'components/burger';
+		'components/burger',
+		'components/slideShow';
 
-@import 'pages/index',
-		'pages/kontakt',
-		'pages/abc',
-		'pages/menu',
-		'pages/landing';
+@import 'pages/index';
 
 @import 'themes/theme';

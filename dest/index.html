@@ -4,11 +4,11 @@
 	<title>Witamy w LoremCafe|Index</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/css/main.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<header>
-		<div class="container">
+	<header>	<!-- class="fixed-header" -->
+		<div class="container-header">
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Menu</a></li>
@@ -23,9 +23,40 @@
 		</div>
 	</header>
 
-	<div>Menu</div>
-	<div>Moments</div>
-	<div>Contact</div>
+	<div id="slideShow">
+		<div class="mySlides fade">
+			<img class="cover" src="public/img/slide1.jpeg">
+		</div>
+		<div class="mySlides fade">
+			<img class="cover" src="public/img/slide2.jpeg">
+		</div>
+		<div class="mySlides fade">
+			<img class="cover" src="public/img/slide3.jpeg">
+		</div>
+		<div class="mySlides fade">
+			<img class="cover" src="public/img/slide4.jpg">
+		</div>
+
+		<div class="dots">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+
+	</div>
+
+	<div class="container">
+		<div class="img-link">
+			<img src="public/img/slide1.jpeg">
+		</div>
+		<div class="img-link">
+			<img src="public/img/slide1.jpeg">
+		</div>
+		<div class="img-link">
+			<img src="public/img/slide1.jpeg">
+		</div>
+	</div>
 
 	<article>
 		<h1>A few words about us</h1>
@@ -35,14 +66,17 @@
 	</article>
 
 	<footer>
-		logo
+		<div id="logo-ft">
+			<h1>Lorem <br>Cafe</h1>
+		</div>
+
 		<p>Address: lorem ipsum</p>
+		<div>
+			<p>SHARE YOUR #Lorem Cafe MOMENTS</p>
+		</div>
 		
 	</footer>
 
-	<div>
-		<img src="public/inside/min.jpeg">
-	</div>
-
+<script src="public/js/main.js"></script>
 </body>
 </html>
