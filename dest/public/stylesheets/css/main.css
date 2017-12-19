@@ -84,7 +84,8 @@ header {
   right: 0;
   z-index: 10;
   padding-top: 80px;
-  font-size: 15px; }
+  font-size: 15px;
+  transition: 0.4s all ease; }
   header a {
     text-transform: uppercase;
     color: #fff;
@@ -114,6 +115,7 @@ header {
   padding-bottom: 10px;
   border-bottom: 1px solid #FF9D00;
   background-color: #555;
+  opacity: 0.9;
   font-size: 14px; }
   .fixed-header div ul {
     margin-top: 20px; }
