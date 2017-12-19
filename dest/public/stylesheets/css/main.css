@@ -448,14 +448,14 @@ nav #menuToggle span {
   height: 250px;
   display: inline-flex; }
 
-.imgLink-container:hover .overlay {
+.img-link:hover .overlay {
   display: block;
   background: rgba(0, 0, 0, 0.6); }
 
-.imgLink-container:hover .img-btn {
+.img-link:hover .img-btn {
   opacity: 1; }
 
-.imgLink-container:hover h2 {
+.img-link:hover h2 {
   top: 50px; }
 
 .img-link {
