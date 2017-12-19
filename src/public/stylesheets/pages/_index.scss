@@ -1,6 +1,65 @@
+.imgLink-container{
+	@extend .container;
+	height:250px;
+	display:inline-flex;
+}
+	//dodane
+  .imgLink-container:hover .overlay{
+	display:block;
+	background: rgba(0, 0, 0, 0.6);
+  }
+  .imgLink-container:hover .img-btn{
+  	opacity: 1;
+  }
+  .imgLink-container:hover h2{
+  	top:50px;
+  }
+
 .img-link{
 	display:inline-flex;
-	flex:1;
 	margin:0;
-	height:400px;
+	height:100%;
+	overflow:hidden;
+
+	color: $text-color2;
+	text-transform: uppercase;
+
+	position:relative;
+	// background: rgba(0,0,0,0.75);
+
+	//dodane
+	.overlay{	
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background: rgba(0, 0, 0, 0);
+		transition: background 0.5s ease;
+	}
+
+
+	
+	// img{
+	// 	z-index:1;
+	// 	flex:1;
+	// 	opacity:0.8;
+	// 	transition: opacity 0.5s ease;
+	// }
+
+	// img:hover{
+	// 	opacity:0.5;
+	// }
+
+	h2{
+		position:absolute;
+		width:100%;
+		// padding-top:75px;
+		top:75px;
+		text-align:center;
+		font-size: 25px;
+		z-index: 1;
+		//dodane
+		transition: top 0.5s ease;
+	}
 }

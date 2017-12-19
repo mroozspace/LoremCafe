@@ -11,11 +11,11 @@
 		<div class="container-header">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Moments</a></li>
-				<li><a href="#">Mailing list</a></li>
-				<li><a href="#">Catering</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="moments.html">Moments</a></li>
+				<li><a href="mlist.html">Mailing list</a></li>
+				<li><a href="catering.html">Catering</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 		<div id="logo">
@@ -36,7 +36,6 @@
 		<div class="mySlides fade">
 			<img class="cover" src="public/img/slide4.jpg">
 		</div>
-
 		<div class="dots">
 			<span class="dot"></span>
 			<span class="dot"></span>
@@ -46,15 +45,26 @@
 
 	</div>
 
-	<div class="container">
+	<div class="imgLink-container">
 		<div class="img-link">
-			<img src="public/img/slide1.jpeg">
+			<div class="overlay"></div>
+			<img src="public/img/moments.jpeg">
+			<!-- <div class="flex-center absolute100"> -->
+				<h2>moments</h2>
+				<a class="img-btn flex-center">more</a>
+			<!-- </div> -->
 		</div>
 		<div class="img-link">
-			<img src="public/img/slide1.jpeg">
+			<div class="overlay"></div>
+			<img src="public/img/menu.jpeg">
+			<h2>menu</h2>
+			<a class="img-btn flex-center">let's drink</a>
 		</div>
 		<div class="img-link">
-			<img src="public/img/slide1.jpeg">
+			<div class="overlay"></div>
+			<img src="public/img/contact.jpeg">
+			<h2>contact</h2>
+			<a class="img-btn flex-center">find us</a>
 		</div>
 	</div>
 
@@ -66,13 +76,20 @@
 	</article>
 
 	<footer>
-		<div id="logo-ft">
-			<h1>Lorem <br>Cafe</h1>
+		<div id="logoContainer-ft">
+			<div id="logo-ft">
+				<h1>Lorem <br>Cafe</h1>
+			</div>
 		</div>
-
-		<p>Address: lorem ipsum</p>
-		<div>
-			<p>SHARE YOUR #Lorem Cafe MOMENTS</p>
+		
+		<div id="addressContainer-ft">
+			<p>	warsaw cafe | ochota district <br>
+				378 / 72 anyStreet - warsaw - poland <br>
+				287 - 948 - 183
+			</p>
+		</div>
+		<div id="momentsContainer-ft">
+			<p>SHARE YOUR <a>#Lorem Cafe</a> MOMENTS</p>
 		</div>
 		
 	</footer>

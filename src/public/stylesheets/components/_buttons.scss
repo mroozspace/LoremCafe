@@ -1,34 +1,63 @@
-.btn-1{
-	width:100%;
-	font-size:1.3em;
-	letter-spacing: 1.5px;
-	border: 1px solid $text-color;
-	border-radius: 20px;
-	background:linear-gradient(to bottom, $bg-color, #eacda3);
-	outline:none;
-	margin-bottom: 15px;
-}
-
-.btn-1:active{
-	background:linear-gradient(to top, #eacda3, $bg-color);
-}
-
-.btn-2{
-	width:100%;
-	height:2em;
-	font-size:1.3em;
-	letter-spacing: 1.5px;
-	border: 1px solid $text-color;
-	background-color: $darkerbg-color;
-	margin-bottom: 35px;
-	transition: all 0.2s;
-	border-radius: 20px;
-	box-shadow: 0px 0px 0px 1px $text-color;
+.img-btn{
+	color: $text-color2;
+	position: absolute;
+	border: 2px solid $text-color2;
+	background: none;
+	min-width:40%;
+	padding: 5px;
+	text-align: center;
+	// z-index:0;
 	
+	left:25%;
+	right:25%;
+	bottom:35%;
+	
+	font-size: 15px;
+	letter-spacing: 2px;
+	font-weight: 700;
+
+	//dodane
+	transition: opacity 0.3s ease;
+	opacity:0;
+	a{
+		z-index:1;
+	}
+
 }
 
-.btn-2:active{
-	background-color: $text-color;
-	color: $darkerbg-color;
-	box-shadow: 0px 0px 0px 5px $first-color;
-}
+
+// old project
+// .btn-1{
+// 	width:100%;
+// 	font-size:1.3em;
+// 	letter-spacing: 1.5px;
+// 	border: 1px solid $text-color;
+// 	border-radius: 20px;
+// 	background:linear-gradient(to bottom, $bg-color, #eacda3);
+// 	outline:none;
+// 	margin-bottom: 15px;
+// }
+
+// .btn-1:active{
+// 	background:linear-gradient(to top, #eacda3, $bg-color);
+// }
+
+// .btn-2{
+// 	width:100%;
+// 	height:2em;
+// 	font-size:1.3em;
+// 	letter-spacing: 1.5px;
+// 	border: 1px solid $text-color;
+// 	background-color: $darkerbg-color;
+// 	margin-bottom: 35px;
+// 	transition: all 0.2s;
+// 	border-radius: 20px;
+// 	box-shadow: 0px 0px 0px 1px $text-color;
+	
+// }
+
+// .btn-2:active{
+// 	background-color: $text-color;
+// 	color: $darkerbg-color;
+// 	box-shadow: 0px 0px 0px 5px $first-color;
+// }
