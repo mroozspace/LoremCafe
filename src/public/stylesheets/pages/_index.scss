@@ -1,3 +1,5 @@
+#index{
+
 .imgLink-container{
 	@extend .container;
 	height:250px;
@@ -10,13 +12,13 @@
 
   .img-link:hover .overlay{
 	display:block;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.5);
   }
   .img-link:hover .img-btn{
-  	opacity: 1;
+	opacity: 1;
   }
   .img-link:hover h2{
-  	top:50px;
+	top:50px;
   }
 
 .img-link{
@@ -43,12 +45,83 @@
 	h2{
 		position:absolute;
 		width:100%;
-		// padding-top:75px;
 		top:75px;
 		text-align:center;
 		font-size: 25px;
 		z-index: 1;
-		//dodane
+
 		transition: top 0.5s ease;
 	}
+}
+
+
+}
+
+@media screen and (max-width: map-get($breakpoints, small)){
+	
+		#header{
+			.container-header{
+				padding-left: 0px;
+			}
+		}
+
+		.imgLink-container{
+			flex-direction: column;
+		}	
+}
+
+
+
+@media screen and (max-width: map-get($breakpoints, medium)){
+
+	#header{
+		ul{
+			display: none;
+		}
+		.fixed-header{
+			padding-top: 10px !important;
+		}
+
+		#logo{
+		margin: 0 auto;
+		}
+	}
+
+	#index{
+		.imgLink-container{
+			flex-direction: column;
+			height: 700px;
+		}
+		.imgLink{
+			height: 300px;
+		}
+
+		.img-link .overlay{
+			display:block;
+			background: rgba(0, 0, 0, 0.2);
+  	}
+
+  	.img-link .img-btn{
+			opacity: 1;
+  	}
+  	.img-link h2{
+			top:50px;
+  	}
+
+	}
+}
+
+@media screen and (max-width: map-get($breakpoints, xmedium)){
+	#header{
+		.container-header{
+			padding-left: 10px;
+		}
+		li{ 
+			margin-left: 15px;
+		}
+		#logo h1{
+			padding-right: 30px;
+		}		
+	}
+
 }

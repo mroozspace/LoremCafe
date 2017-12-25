@@ -35,20 +35,20 @@ article {
   display: block;
   margin: 80px auto;
   text-align: center;
-  width: 50%;
-  min-width: 500px; }
+  width: 70%;
+  max-width: 520px; }
   article p {
     margin: 20px auto;
-    width: 80%; }
+    width: 90%; }
 
 .divider {
   display: block;
   margin: 0 auto;
-  width: 200px;
+  width: 100px;
   height: 2px;
   background-color: #FF9D00; }
 
-.container, .container-header, .imgLink-container {
+.container, .container-header, #index .imgLink-container {
   display: flex;
   width: 100%; }
 
@@ -117,9 +117,10 @@ header {
   background-color: #555;
   opacity: 0.9; }
   .fixed-header div ul {
-    margin-top: 20px; }
+    margin-top: 5px; }
   .fixed-header #logo h1, .fixed-header footer #logo-ft h1, footer .fixed-header #logo-ft h1 {
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 20px; }
 
 #logo, footer #logo-ft {
   display: inline-flex;
@@ -445,23 +446,23 @@ nav #menuToggle span {
 .active {
   background-color: #333; }
 
-.imgLink-container {
+#index .imgLink-container {
   height: 250px;
   display: inline-flex; }
-  .imgLink-container img {
+  #index .imgLink-container img {
     object-fit: cover; }
 
-.img-link:hover .overlay {
+#index .img-link:hover .overlay {
   display: block;
-  background: rgba(0, 0, 0, 0.6); }
+  background: rgba(0, 0, 0, 0.5); }
 
-.img-link:hover .img-btn {
+#index .img-link:hover .img-btn {
   opacity: 1; }
 
-.img-link:hover h2 {
+#index .img-link:hover h2 {
   top: 50px; }
 
-.img-link {
+#index .img-link {
   display: inline-flex;
   margin: 0;
   height: 100%;
@@ -469,7 +470,7 @@ nav #menuToggle span {
   color: #fff;
   text-transform: uppercase;
   position: relative; }
-  .img-link .overlay {
+  #index .img-link .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -477,7 +478,7 @@ nav #menuToggle span {
     height: 100%;
     background: rgba(0, 0, 0, 0.15);
     transition: background 0.5s ease; }
-  .img-link h2 {
+  #index .img-link h2 {
     position: absolute;
     width: 100%;
     top: 75px;
@@ -485,3 +486,37 @@ nav #menuToggle span {
     font-size: 25px;
     z-index: 1;
     transition: top 0.5s ease; }
+
+@media screen and (max-width: 500px) {
+  #header .container-header {
+    padding-left: 0px; }
+  .imgLink-container {
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  #header ul {
+    display: none; }
+  #header .fixed-header {
+    padding-top: 10px !important; }
+  #header #logo, #header footer #logo-ft, footer #header #logo-ft {
+    margin: 0 auto; }
+  #index .imgLink-container {
+    flex-direction: column;
+    height: 700px; }
+  #index .imgLink {
+    height: 300px; }
+  #index .img-link .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.2); }
+  #index .img-link .img-btn {
+    opacity: 1; }
+  #index .img-link h2 {
+    top: 50px; } }
+
+@media screen and (max-width: 1100px) {
+  #header .container-header {
+    padding-left: 10px; }
+  #header li {
+    margin-left: 15px; }
+  #header #logo h1, #header footer #logo-ft h1, footer #header #logo-ft h1 {
+    padding-right: 30px; } }

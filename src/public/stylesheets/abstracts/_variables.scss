@@ -22,3 +22,11 @@ $part-color:#ffc;
 $header-shadow-color: #fff;
 
 $grid-caption-bg-height:30px;
+
+$breakpoints:(
+	'small'	: 500px,
+	'medium': 768px,
+	'xmedium': 1100px,
+	'large'	: 1366px,
+	'xlarge': 2000px,
+);
