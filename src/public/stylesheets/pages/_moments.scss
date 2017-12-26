@@ -6,8 +6,9 @@
 	display: block;
 	flex: auto;
 	text-align: center;
-	justify-content: space-around;
+	justify-content: center;
 	min-width: 290px;
+	max-width: 350px;
 	margin: 10px;
 
 	h1{
@@ -28,3 +29,29 @@
 	}
 }
 
+.gallery{
+	display:flex;
+	margin: 20px auto;
+	flex-flow: row wrap;
+	align-content: center;
+	width:80%;
+
+	div{
+		margin: 40px auto;
+		width: 200px;
+		height: 200px;
+		border-radius: 40px;
+		transition: all 0.5s ease;
+
+		img{
+			// object-fit:cover;
+			width: 100%;
+			height: 100%;
+			border-radius:inherit;
+			transition: all 0.5s ease;
+		}
+	}
+	div:hover{
+		transform: scale(1.05);
+	}
+}

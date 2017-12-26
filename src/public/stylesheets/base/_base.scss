@@ -68,6 +68,11 @@ article{
 	flex-wrap: wrap;
 }
 
+.container-center{
+	@extend .container;
+	justify-content: center;
+}
+
 .flex-center{
 	display:flex;
 	justify-content: center;
