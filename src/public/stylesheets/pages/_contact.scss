@@ -51,36 +51,8 @@
 	}
 }
 
-.map-wrap{
-	height: 390px;
-	width: 50%;
-	margin: 20px auto;
-	float: left;
-}
-
 #map{
-/*	height: 400px;
-	width: 400px;
-*/	display: inline-block;
-	padding: 10px;
-	background-color: #999999;
-	/*margin-top: 20px;*/
-	/*margin-left: 5px;*/
-	width: 100%;
-	height: 65%;
-	border: 2px solid #fff;
-}
-
-#map-caption{
-	position: relative;
-    border: 2px solid #fff;
-    padding: 10px;
-    /*margin: 5px;*/
-    width: 100%;
-    height: 40%;
-    background-color: #999999;
-}
-
-#map-caption h3{
-	margin-bottom: 0px;
+	margin:0;
+	width:100%;
+	height:400px;
 }
