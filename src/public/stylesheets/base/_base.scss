@@ -56,9 +56,16 @@ article{
 	background-color: $first-color;
 }
 
+.divider-s{
+	@extend .divider;
+	width: 40px;
+}
+
 .container{
 	display: flex;
 	width: 100%;
+
+	flex-wrap: wrap;
 }
 
 .flex-center{

@@ -1,4 +1,3 @@
-// #index{
 
 	.imgLink-container{
 		@extend .container;
@@ -62,9 +61,6 @@
 	transform: translateY(-30px);
   }
 
-
-// }
-
 @media screen and (max-width: map-get($breakpoints, small)){
 	
 		#header{
@@ -115,8 +111,6 @@
   	.img-link h2{
 			top:50px;
   	}
-
-	
 }
 
 @media screen and (max-width: map-get($breakpoints, xmedium)){
@@ -131,5 +125,4 @@
 			padding-right: 30px;
 		}		
 	}
-
 }
