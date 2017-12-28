@@ -7,22 +7,23 @@ header{
 	right:0;
 	z-index: 10;
 	padding-top: 80px;
-
+	font-weight: 700;
 	font-size: 15px;
-
 
 	a{
 		text-transform: uppercase;
 		color: $text-color2;
-		font-weight:700;
-		display: inline-flex;
 		flex: 1;
 		transition: 0.3s all;
 		border-bottom: 1px solid transparent;
+		border: 2px solid transparent;
+		opacity:0.9;
+		// text-shadow: 0px 0px 10px $text-color2;
+
 	}
 	a:hover{
-		color:$first-color;
-		border-bottom: $first-color 1px solid;
+		opacity: 1;
+		text-shadow: 0px 0px 20px $text-color2;
 	}
 
 	ul{
@@ -32,7 +33,6 @@ header{
 	li{
 		float:left;
 		margin-left:50px;
-		text-shadow: 0px 0px 2px $first-color;
 	}
 
 	transition: 0.4s all ease;
@@ -47,10 +47,12 @@ header{
 	z-index:10;
 	padding-top:10px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid $first-color;
-	background-color: $text-color;
+	border-bottom: 1px solid $bg-lowerContainer-ft;
+	background-color: $bg-ft;
 	opacity: 0.9;
-
+	a{
+		color:$text-color2;
+	}
 	// font-size: 14px;
 
 	div{
