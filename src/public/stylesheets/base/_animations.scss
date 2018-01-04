@@ -10,7 +10,8 @@
 
 // index - slideshow
 $slideShowTime: 40s;
-$phase : $slideShowTime/8;
+$slides : 4;
+$phase : $slideShowTime/($slides*2);
 
 $firstDelay: $phase*2;
 $secondDelay: $phase*4;

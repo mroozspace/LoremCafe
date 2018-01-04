@@ -1,0 +1,70 @@
+// ======= small =======
+
+@media screen and (max-width: map-get($breakpoints, small)){
+	
+		#header{
+			.container-header{
+				padding-left: 0px;
+			}
+		}
+
+		.imgLink-container{
+			flex-direction: column;
+		}	
+}
+
+// ======= medium =======
+
+
+@media screen and (max-width: map-get($breakpoints, medium)){
+
+	#header{
+		.container-header ul{
+			display: none;
+		}
+		.fixed-header{
+			padding-top: 10px !important;
+		}
+
+		#logo{
+		margin: 0 auto;
+		}
+	}
+
+		.imgLink-container{
+			flex-direction: column;
+			height: 700px;
+		}
+		.imgLink{
+			height: 300px;
+			width: 100%;
+		}
+
+		.img-link .overlay{
+			display:block;
+			background: rgba(0, 0, 0, 0.2);
+  	}
+
+  	.img-link .img-btn{
+			opacity: 1;
+  	}
+  	.img-link h2{
+			top:50px;
+  	}
+}
+
+// ======= xmedium =======
+
+@media screen and (max-width: map-get($breakpoints, xmedium)){
+	#header{
+		.container-header{
+			padding-left: 10px;
+		}
+		li{ 
+			margin-left: 15px;
+		}
+		#logo h1{
+			padding-right: 30px;
+		}		
+	}
+}
