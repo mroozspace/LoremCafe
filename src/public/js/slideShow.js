@@ -1,3 +1,9 @@
+
+// ======= index slideshow js - start 
+var mainSlideShow = document.getElementById('slideShow');
+
+if(mainSlideShow){
+
 var slideIndex = 0;
 showSlides();
 
@@ -17,3 +23,5 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 10000);
 }
+}
+// ======= index slideshow js - end 
