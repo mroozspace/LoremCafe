@@ -5,11 +5,10 @@ var modalpage = document.getElementById("myModal");
 
 if(modalpage){
 
-var modSlideIndex = 1;
+var modSlideIndex = 0;
 var slides = document.getElementsByClassName("myModSlides");
 var slidesLength = slides.length;
 var dots = document.getElementsByClassName("mod-img");
-
 
 function openModal(){
 	document.getElementById("myModal").style.display="block";
@@ -35,12 +34,16 @@ function currentModSlide(n){
 }
 
 function showModSlides(n){
+	// console.log("n : "+n);
+	// console.log("modSlideIndex : "+modSlideIndex);
+
 	// conditions to prev and next
 	if (n+1 > slides.length){
 		modSlideIndex = 0;
+		// n=0;
 	}
 	if (n < 0){
-		modSlideIndex = slides.length;
+		modSlideIndex = slides.length-1;
 	}
 
 	// change of slide 

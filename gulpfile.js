@@ -3,13 +3,14 @@ const	gulp	=	require("gulp"),
 		uglify	=	require("gulp-uglify"),
 		htmlMin	=	require("gulp-minify-html"),
 		concat	=	require("gulp-concat"),
+		cleanCSS=	require('gulp-clean-css'),
 		browserSync	=	require("browser-sync").create();
 
 
 //HTML copy
 gulp.task("html", function(){
 	gulp.src("src/views/*.html")
-		// .pipe(htmlMin())
+		.pipe(htmlMin())
 		.pipe(gulp.dest("dest"))
 });
 
@@ -28,14 +29,23 @@ gulp.task("img",function(){
 gulp.task("js", function(){
 	gulp.src("src/public/js/*.js")
 		.pipe(concat("main.js"))
-		// .pipe(uglify())
+		.pipe(uglify())
 		.pipe(gulp.dest("dest/public/js"))
+});
+
+// minify css
+gulp.task("minify-css", ()=>{
+	return gulp.src("src/public/stylesheets/*.css")
+		.pipe(cleanCSS({compatibility: '*'}))	     
+	  	.pipe(gulp.dest('dest/public/stylesheets/css'));
+  		// .pipe(gulp.dest('/dest'));
 });
 // sass compile
 gulp.task("sass", function(){
 	return gulp.src("src/public/stylesheets/**/*.scss")
 		.pipe(sass().on("error", sass.logError))
-		.pipe(gulp.dest("dest/public/stylesheets/css"))
+		// .pipe(gulp.dest("dest/public/stylesheets/css"))
+		.pipe(gulp.dest("src/public/stylesheets/css"))
 		.pipe(browserSync.stream()); //stream to browser
 });
 
