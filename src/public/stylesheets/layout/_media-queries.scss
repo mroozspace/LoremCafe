@@ -10,11 +10,12 @@
 
 		.imgLink-container{
 			flex-direction: column;
+		display:none;
+			
 		}	
 }
 
 // ======= medium =======
-
 
 @media screen and (max-width: map-get($breakpoints, medium)){
 
@@ -31,25 +32,25 @@
 		}
 	}
 
-		.imgLink-container{
-			flex-direction: column;
-			height: 700px;
-		}
-		.imgLink{
-			height: 300px;
-			width: 100%;
-		}
+	.imgLink-container{
+		flex-direction: column;
+		height: 700px;
+	}
+	.imgLink{
+		height: 300px;
+		width: 100%;
+	}
 
-		.img-link .overlay{
-			display:block;
-			background: rgba(0, 0, 0, 0.2);
+	.img-link .overlay{
+		display:block;
+		background: rgba(0, 0, 0, 0.2);
   	}
 
   	.img-link .img-btn{
-			opacity: 1;
+		opacity: 1;
   	}
   	.img-link h2{
-			top:50px;
+		top:50px;
   	}
 }
 
