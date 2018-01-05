@@ -1,5 +1,5 @@
 
-	.imgLink-container{
+	.img-link-container{
 		@extend .container;
 		height:250px;
 		display:inline-flex;
@@ -50,7 +50,6 @@
 
 .img-link:hover .overlay{
 	display:block;
-	// background: rgba(0, 0, 0, 0.5);
 	opacity: 1;
   }
   .img-link:hover .img-btn{
