@@ -7,6 +7,24 @@
 				padding-left: 0px;
 			}
 		}
+
+		.menu-container{
+			.menu-img{
+				width: 100%;
+				margin: 10px 0;
+			}
+
+			.menu-description-l{
+				width: 100%;
+				margin: 0;
+			}
+			dt{
+				max-width: 100px;
+			}
+			.menu-description-r{
+				order:1;
+			}
+		}
 }
 
 // ======= medium =======

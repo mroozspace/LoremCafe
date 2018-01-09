@@ -304,7 +304,17 @@ footer {
 
 @media screen and (max-width: 500px) {
   #header .container-header {
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  .menu-container .menu-img {
+    width: 100%;
+    margin: 10px 0; }
+  .menu-container .menu-description-l, .menu-container .menu-description-r {
+    width: 100%;
+    margin: 0; }
+  .menu-container dt {
+    max-width: 100px; }
+  .menu-container .menu-description-r {
+    order: 1; } }
 
 @media screen and (min-width: 768px) {
   #header #menuToggle {
