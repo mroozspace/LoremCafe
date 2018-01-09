@@ -341,16 +341,18 @@ footer {
   #header #logo h1, #header footer #logo-ft h1, footer #header #logo-ft h1 {
     padding-right: 30px; } }
 
-.img-btn {
+.btn, .img-btn {
   color: #fff;
-  position: absolute;
   border: 2px solid #fff;
-  background: none;
   min-width: 40%;
+  max-width: 50%;
+  padding: 5px;
+  margin: 0 auto; }
+
+.img-btn {
+  position: absolute;
   padding: 5px;
   text-align: center;
-  left: 25%;
-  right: 25%;
   bottom: 35%;
   font-size: 15px;
   letter-spacing: 2px;
@@ -579,6 +581,7 @@ nav #menuToggle span {
   overflow: hidden;
   min-width: 100px;
   width: 33.3333%;
+  justify-content: center;
   color: #fff;
   text-transform: uppercase;
   position: relative; }
@@ -691,6 +694,24 @@ nav #menuToggle span {
       border-radius: inherit;
       transition: all 0.5s ease;
       cursor: pointer; }
+
+#blog-landing {
+  /* fallback for old browsers */
+  background: #222222;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom, #ff9d00, #222222);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, #ff9d00, #222222);
+  display: flex;
+  align-items: center; }
+
+#blog-article {
+  max-width: 1000px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
 
 .menu-container {
   margin: 20px auto; }
