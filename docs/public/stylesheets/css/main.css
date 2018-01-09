@@ -9,6 +9,9 @@ html {
   line-height: 1.8em;
   color: #555; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
   padding: 0;
@@ -273,17 +276,48 @@ footer {
       text-shadow: 0px 0px 0.1px white; }
 
 /* ======== Form ========*/
-.contact .contact-form {
+form .contact .contact-form {
   display: inline-block;
   float: right;
   padding: 15px;
   background-color: #999999;
   margin-top: 20px;
-  width: 35%;
   border: 2px solid #fff; }
-  .contact .contact-form input, .contact .contact-form textarea, .contact .contact-form button {
-    outline-color: #FF9D00;
-    width: 100%; }
+  form .contact .contact-form input, form .contact .contact-form textarea, form .contact .contact-form button {
+    outline-color: #FF9D00; }
+  form .contact .contact-form .three {
+    width: 33.333333%; }
+
+.contact-form {
+  width: 70%;
+  text-align: center;
+  margin: 20px auto; }
+  .contact-form input, .contact-form textarea {
+    text-transform: uppercase;
+    text-align: inherit;
+    border: none;
+    border-bottom: 2px solid #FF9D00;
+    outline: #FF9D00;
+    width: 80%;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.8em;
+    letter-spacing: 3px;
+    margin: 10px auto;
+    transition: all 0.5s ease; }
+  .contact-form input {
+    height: 50px; }
+  .contact-form textarea {
+    min-height: 120px; }
+  .contact-form input:focus, .contact-form textarea:focus {
+    box-shadow: 0 2px 10px 1px #FF9D00; }
+  .contact-form input[type="submit"] {
+    background: none;
+    cursor: pointer;
+    border: 1px solid #FF9D00; }
+  .contact-form input[type="submit"]:hover {
+    box-shadow: 0 2px 10px 1px #FF9D00; }
 
 .contact .contact-form textarea {
   height: 130px; }
@@ -301,7 +335,21 @@ footer {
 
 @media screen and (max-width: 500px) {
   #header .container-header {
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  .menu-container .menu-img {
+    width: 100%;
+    margin: 10px 0; }
+  .menu-container .menu-description-l, .menu-container .menu-description-r {
+    width: 100%;
+    margin: 0; }
+  .menu-container dt {
+    max-width: 100px; }
+  .menu-container .menu-description-r {
+    order: 1; } }
+
+@media screen and (min-width: 768px) {
+  #header #menuToggle {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   #header .container-header ul {
@@ -310,6 +358,8 @@ footer {
     padding-top: 10px !important; }
   #header #logo, #header footer #logo-ft, footer #header #logo-ft {
     margin: 0 auto; }
+  #header #menuToggle {
+    display: block; }
   .img-link-container {
     height: 750px !important; }
     .img-link-container .img-link {
@@ -332,16 +382,18 @@ footer {
   #header #logo h1, #header footer #logo-ft h1, footer #header #logo-ft h1 {
     padding-right: 30px; } }
 
-.img-btn {
+.btn, .img-btn {
   color: #fff;
-  position: absolute;
   border: 2px solid #fff;
-  background: none;
   min-width: 40%;
+  max-width: 50%;
+  padding: 5px;
+  margin: 0 auto; }
+
+.img-btn {
+  position: absolute;
   padding: 5px;
   text-align: center;
-  left: 25%;
-  right: 25%;
   bottom: 35%;
   font-size: 15px;
   letter-spacing: 2px;
@@ -406,8 +458,6 @@ nav #menuToggle span {
 
 #menuBookmarks {
   position: fixed;
-  width: 105vw;
-  height: 105vh;
   margin: 10px 0 0 0;
   left: -48px;
   right: 0;
@@ -535,9 +585,8 @@ nav #menuToggle span {
   cursor: pointer;
   position: absolute;
   display: block;
-  top: 0;
-  bottom: 0;
-  top: 30%;
+  top: 40%;
+  background-color: rgba(0, 0, 0, 0.2);
   width: auto;
   padding: 16px;
   color: white;
@@ -573,6 +622,7 @@ nav #menuToggle span {
   overflow: hidden;
   min-width: 100px;
   width: 33.3333%;
+  justify-content: center;
   color: #fff;
   text-transform: uppercase;
   position: relative; }
@@ -606,37 +656,6 @@ nav #menuToggle span {
 
 #home-article {
   max-width: 600px; }
-
-.contact-form {
-  width: 100%;
-  text-align: center;
-  margin: 20px auto; }
-  .contact-form input, .contact-form textarea {
-    text-transform: uppercase;
-    text-align: inherit;
-    border: none;
-    border-bottom: 2px solid #FF9D00;
-    outline: #FF9D00;
-    width: 80%;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.8em;
-    letter-spacing: 3px;
-    margin: 10px auto;
-    transition: all 0.5s ease; }
-  .contact-form input {
-    height: 50px; }
-  .contact-form textarea {
-    min-height: 120px; }
-  .contact-form input:focus, .contact-form textarea:focus {
-    box-shadow: 0 2px 10px 1px #FF9D00; }
-  .contact-form input[type="submit"] {
-    background: none;
-    cursor: pointer;
-    border: 1px solid #FF9D00; }
-  .contact-form input[type="submit"]:hover {
-    box-shadow: 0 2px 10px 1px #FF9D00; }
 
 #map {
   margin: 0;
@@ -685,6 +704,24 @@ nav #menuToggle span {
       border-radius: inherit;
       transition: all 0.5s ease;
       cursor: pointer; }
+
+#blog-landing {
+  /* fallback for old browsers */
+  background: #222222;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom, #ff9d00, #222222);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, #ff9d00, #222222);
+  display: flex;
+  align-items: center; }
+
+#blog-article {
+  max-width: 1000px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
 
 .menu-container {
   margin: 20px auto; }
