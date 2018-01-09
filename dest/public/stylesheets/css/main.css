@@ -9,6 +9,9 @@ html {
   line-height: 1.8em;
   color: #555; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
   padding: 0;
@@ -303,6 +306,10 @@ footer {
   #header .container-header {
     padding-left: 0px; } }
 
+@media screen and (min-width: 768px) {
+  #header #menuToggle {
+    display: none; } }
+
 @media screen and (max-width: 768px) {
   #header .container-header ul {
     display: none; }
@@ -310,6 +317,8 @@ footer {
     padding-top: 10px !important; }
   #header #logo, #header footer #logo-ft, footer #header #logo-ft {
     margin: 0 auto; }
+  #header #menuToggle {
+    display: block; }
   .img-link-container {
     height: 750px !important; }
     .img-link-container .img-link {
@@ -406,8 +415,6 @@ nav #menuToggle span {
 
 #menuBookmarks {
   position: fixed;
-  width: 105vw;
-  height: 105vh;
   margin: 10px 0 0 0;
   left: -48px;
   right: 0;
@@ -535,9 +542,8 @@ nav #menuToggle span {
   cursor: pointer;
   position: absolute;
   display: block;
-  top: 0;
-  bottom: 0;
-  top: 30%;
+  top: 40%;
+  background-color: rgba(0, 0, 0, 0.2);
   width: auto;
   padding: 16px;
   color: white;

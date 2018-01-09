@@ -11,6 +11,12 @@
 
 // ======= medium =======
 
+@media screen and (min-width: map-get($breakpoints, medium)){
+		#header #menuToggle{
+		display:none;
+	}
+}
+
 @media screen and (max-width: map-get($breakpoints, medium)){
 
 	#header{
@@ -20,9 +26,12 @@
 		.fixed-header{
 			padding-top: 10px !important;
 		}
-
 		#logo{
 		margin: 0 auto;
+		}
+
+		#menuToggle{
+			display: block;
 		}
 	}
 

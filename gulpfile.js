@@ -44,8 +44,8 @@ gulp.task("minify-css", ()=>{
 gulp.task("sass", function(){
 	return gulp.src("src/public/stylesheets/**/*.scss")
 		.pipe(sass().on("error", sass.logError))
-		// .pipe(gulp.dest("dest/public/stylesheets/css"))
-		.pipe(gulp.dest("src/public/stylesheets/css"))
+		.pipe(gulp.dest("dest/public/stylesheets/css"))
+		// .pipe(gulp.dest("src/public/stylesheets/css"))
 		.pipe(browserSync.stream()); //stream to browser
 });
 
