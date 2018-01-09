@@ -276,17 +276,48 @@ footer {
       text-shadow: 0px 0px 0.1px white; }
 
 /* ======== Form ========*/
-.contact .contact-form {
+form .contact .contact-form {
   display: inline-block;
   float: right;
   padding: 15px;
   background-color: #999999;
   margin-top: 20px;
-  width: 35%;
   border: 2px solid #fff; }
-  .contact .contact-form input, .contact .contact-form textarea, .contact .contact-form button {
-    outline-color: #FF9D00;
-    width: 100%; }
+  form .contact .contact-form input, form .contact .contact-form textarea, form .contact .contact-form button {
+    outline-color: #FF9D00; }
+  form .contact .contact-form .three {
+    width: 33.333333%; }
+
+.contact-form {
+  width: 70%;
+  text-align: center;
+  margin: 20px auto; }
+  .contact-form input, .contact-form textarea {
+    text-transform: uppercase;
+    text-align: inherit;
+    border: none;
+    border-bottom: 2px solid #FF9D00;
+    outline: #FF9D00;
+    width: 80%;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.8em;
+    letter-spacing: 3px;
+    margin: 10px auto;
+    transition: all 0.5s ease; }
+  .contact-form input {
+    height: 50px; }
+  .contact-form textarea {
+    min-height: 120px; }
+  .contact-form input:focus, .contact-form textarea:focus {
+    box-shadow: 0 2px 10px 1px #FF9D00; }
+  .contact-form input[type="submit"] {
+    background: none;
+    cursor: pointer;
+    border: 1px solid #FF9D00; }
+  .contact-form input[type="submit"]:hover {
+    box-shadow: 0 2px 10px 1px #FF9D00; }
 
 .contact .contact-form textarea {
   height: 130px; }
@@ -625,37 +656,6 @@ nav #menuToggle span {
 
 #home-article {
   max-width: 600px; }
-
-.contact-form {
-  width: 100%;
-  text-align: center;
-  margin: 20px auto; }
-  .contact-form input, .contact-form textarea {
-    text-transform: uppercase;
-    text-align: inherit;
-    border: none;
-    border-bottom: 2px solid #FF9D00;
-    outline: #FF9D00;
-    width: 80%;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.8em;
-    letter-spacing: 3px;
-    margin: 10px auto;
-    transition: all 0.5s ease; }
-  .contact-form input {
-    height: 50px; }
-  .contact-form textarea {
-    min-height: 120px; }
-  .contact-form input:focus, .contact-form textarea:focus {
-    box-shadow: 0 2px 10px 1px #FF9D00; }
-  .contact-form input[type="submit"] {
-    background: none;
-    cursor: pointer;
-    border: 1px solid #FF9D00; }
-  .contact-form input[type="submit"]:hover {
-    box-shadow: 0 2px 10px 1px #FF9D00; }
 
 #map {
   margin: 0;
