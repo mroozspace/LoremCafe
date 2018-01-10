@@ -1,20 +1,25 @@
 #blog-landing{
 /* fallback for old browsers */
-background: rgb(34, 34, 34);  
- /* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-linear-gradient(to bottom, rgb(255, 157, 0), rgb(34, 34, 34)); 
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to bottom, rgb(255, 157, 0), rgb(34, 34, 34)); 
+// background: rgb(34, 34, 34);  
+//  /* Chrome 10-25, Safari 5.1-6 */
+// background: -webkit-linear-gradient(to bottom, rgb(255, 157, 0), rgb(34, 34, 34)); 
+// /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// background: linear-gradient(to bottom, rgb(255, 157, 0), rgb(34, 34, 34)); 
 
 display:flex;
 align-items: center;
+
+background-image: url("../../img/blog1.jpeg");
+background-size:cover;
 
 }
 
 #blog-article{
 	max-width: 1000px;
 	position: relative;
-
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	border-radius: 25px;
 	color:$text-color2;
 	
 	display:flex;
