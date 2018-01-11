@@ -3,12 +3,13 @@
 
 var body = document.getElementsByTagName("body")[0];
 var nav = document.getElementsByTagName("nav")[0];
+// var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
 
 window.onscroll = function(){fixedHeader()};
-body.onresize = function() {fixedOnResize()};
+body.onresize = function(){fixedOnResize()};
 
 fixedOnResize();
-
 
 function fixedOnResize(){
 
@@ -36,7 +37,7 @@ function fixedHeader(){
 
 	var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
 	var header = document.getElementById("header");
-
+	console.log(scrollPos);
 	if(width>768){
 		if(scrollPos > 230){
 			header.classList.add("fixed-header");

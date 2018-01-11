@@ -29,6 +29,38 @@
 	a{
 		z-index:1;
 	}
-
 }
 
+.btn-scroll{
+	display:block;
+	width:80px;
+	margin:0 auto;
+
+	text-transform: uppercase;
+}
+
+.btn-scroll span {
+	position: relative;
+    
+    display: block;
+	height: 16px;
+	width: 16px;
+
+    left: 50%;    
+    bottom: 20px;
+    
+    margin-left: -8px;
+    margin-top: 20px;
+
+	border-bottom: 1px solid $first-color;
+	border-right: 1px solid $first-color;
+
+    transform: rotate(45deg);
+
+    animation: scroll 4s infinite ease;
+}
+
+.btn-scroll:hover span{
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+}
