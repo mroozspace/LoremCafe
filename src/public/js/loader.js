@@ -9,11 +9,9 @@ window.addEventListener('load',closePreload());
 
 		setTimeout(function(){
 			loader.classList.add("fadeOut");
-			document.querySelector('body').classList.add("no-scroll");
 		},2000);
 		setTimeout(function(){
-			loader.style.display=("none");
-			document.querySelector('body').classList.remove("no-scroll");
+			loader.style.display="none";
 		},4000);
 	}
 }
