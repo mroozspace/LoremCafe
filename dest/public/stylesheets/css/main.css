@@ -149,6 +149,24 @@ article {
     opacity: 0;
     transform: rotate(45deg) translate(10px, 10px); } }
 
+@keyframes loading {
+  0% {
+    transform: translateX(300%); }
+  50% {
+    transform: translateX(-500%); }
+  100% {
+    transform: translateX(300%); } }
+
+.fadeOut {
+  animation: fadeOut 2s ease;
+  animation-fill-mode: forwards; }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
 header {
   position: absolute;
   display: flex;
@@ -690,6 +708,35 @@ nav #menuToggle span {
 
 #home-article {
   max-width: 600px; }
+
+#loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #222;
+  overflow: hidden; }
+  #loader h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%); }
+  #loader .ball, #loader .ball2, #loader .ball3 {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(300%);
+    border-radius: 50%;
+    background-color: white;
+    animation: loading 3s infinite ease-in-out; }
+  #loader .ball2 {
+    background-color: #FF9D00;
+    animation: loading 3s 500ms infinite ease-in-out; }
+  #loader .ball3 {
+    animation: loading 3s 800ms infinite ease-in-out; }
 
 #map {
   margin: 0;

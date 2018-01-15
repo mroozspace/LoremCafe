@@ -57,6 +57,10 @@ $thirdDelay: $phase*6;
   }
 }
 
+// index - slideshow
+
+// scroll arrow
+
 @keyframes scroll{
   0%{
     opacity:0;
@@ -70,3 +74,29 @@ $thirdDelay: $phase*6;
     transform: rotate(45deg) translate(10px, 10px);
   }
 }
+
+// scroll arrow
+
+// preload page
+@keyframes loading{
+  0% {
+    transform: translateX(300%);
+  }
+  50% {
+    transform: translateX(-500%);
+  }
+  100%{
+    transform: translateX(300%);
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+  from {opacity: 1}
+  to {opacity: 0}
+}
+// preload page

@@ -64,3 +64,47 @@
 #home-article{
 	max-width: 600px;
 }
+
+#loader{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background-color: #222;
+	overflow:hidden;
+
+	h1{
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.ball{
+	display:block;
+	width:20px;
+	height:20px;
+
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translateX(300%);
+
+	border-radius: 50%;
+	background-color: white;
+
+	animation: loading 3s infinite ease-in-out;
+	}
+	.ball2{
+		@extend .ball;
+		background-color: $first-color;
+		animation: loading 3s 500ms infinite ease-in-out;
+	}
+	.ball3{
+		@extend .ball;
+		animation: loading 3s 800ms infinite ease-in-out;
+	}
+}
+
+
+
