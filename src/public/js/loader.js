@@ -1,7 +1,7 @@
 var loader = document.getElementById("loader");
 var mainSlideShow = document.getElementById('slideShow');
 
-if(mainSlideShow){
+// if(mainSlideShow){
 
 window.addEventListener('load',closePreload());
 
@@ -9,9 +9,9 @@ window.addEventListener('load',closePreload());
 
 		setTimeout(function(){
 			loader.classList.add("fadeOut");
-		},2000);
+		},200);
 		setTimeout(function(){
 			loader.style.display="none";
-		},4000);
+		},1500);
 	}
-}
+// }
