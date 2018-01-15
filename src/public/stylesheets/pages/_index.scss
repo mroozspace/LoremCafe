@@ -95,12 +95,12 @@
 
 // 	animation: loading 3s infinite ease-in-out;
 // 	}
-// 	.ball2{
+// 	.ball:nth-child(2){
 // 		@extend .ball;
 // 		background-color: $first-color;
 // 		animation: loading 3s 500ms infinite ease-in-out;
 // 	}
-// 	.ball3{
+// 	.ball:nth-child(3){
 // 		@extend .ball;
 // 		animation: loading 3s 800ms infinite ease-in-out;
 // 	}

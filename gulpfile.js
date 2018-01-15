@@ -4,29 +4,30 @@ const	gulp	=	require("gulp"),
 		htmlMin	=	require("gulp-minify-html"),
 		concat	=	require("gulp-concat"),
 		cleanCSS=	require('gulp-clean-css'),
+		autoprefixer = require("gulp-autoprefixer"),
 		browserSync	=	require("browser-sync").create();
 
 
 //HTML copy
-gulp.task("html", function(){
+gulp.task("html", ()=>{
 	gulp.src("src/views/*.html")
 		.pipe(htmlMin())
 		.pipe(gulp.dest("dest"))
 });
 
 //favicon copy
-gulp.task("ico", function(){
+gulp.task("ico", ()=>{
 	gulp.src("src/views/*.ico")
 		.pipe(gulp.dest("dest"))
 });
 
 // Img copy
-gulp.task("img",function(){
+gulp.task("img",()=>{
 	gulp.src("src/public/img/*")
 		.pipe(gulp.dest("dest/public/img"))
 });
 // Javascript copy&minify
-gulp.task("js", function(){
+gulp.task("js", ()=>{
 	gulp.src("src/public/js/*.js")
 		.pipe(concat("main.js"))
 		.pipe(uglify())
@@ -41,18 +42,25 @@ gulp.task("minify-css", ()=>{
   		// .pipe(gulp.dest('/dest'));
 });
 // sass compile
-gulp.task("sass", function(){
+gulp.task("sass", ()=>{
 	return gulp.src("src/public/stylesheets/**/*.scss")
 		.pipe(sass().on("error", sass.logError))
-		.pipe(gulp.dest("dest/public/stylesheets/css"))
+// autoprefixer added
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
+		}))
+// cleanCSS added
+		.pipe(cleanCSS({compatibility: '*'}))
 		// .pipe(gulp.dest("src/public/stylesheets/css"))
+		.pipe(gulp.dest("dest/public/stylesheets/css"))
 		.pipe(browserSync.stream()); //stream to browser
 });
 
-gulp.task("default", ["html", "img", "js", "sass","ico"]);
+gulp.task("default", ["html", "img", "js", "sass","auto-prefixer"]);
 
 // watch&serve
-gulp.task("serve", ["sass"], function(){
+gulp.task("serve", ["sass"], ()=>{
 
 	browserSync.init({
 		server: "./dest"

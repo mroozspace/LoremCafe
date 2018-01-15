@@ -3,7 +3,6 @@
 }
 
 .modal{
-	// box-sizing: border-box;
 	display: none;
 	position: fixed;
 	z-index: 10;
@@ -37,7 +36,6 @@
 		min-height: 490px;
 		max-height: 70vh;
 		object-fit:cover;
-		// z-index:-1;
 	}
 }
 
@@ -50,7 +48,6 @@
 
 	img{
 	height: 100px;
-	// height: 10vh;
 
 	min-width: 150px;
 	object-fit:cover;
