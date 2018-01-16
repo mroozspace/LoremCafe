@@ -57,7 +57,7 @@ gulp.task("sass", ()=>{
 		.pipe(browserSync.stream()); //stream to browser
 });
 
-gulp.task("default", ["html", "img", "js", "sass","auto-prefixer"]);
+gulp.task("default", ["html", "img", "js", "sass"]);
 
 // watch&serve
 gulp.task("serve", ["sass"], ()=>{
