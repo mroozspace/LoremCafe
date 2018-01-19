@@ -23,14 +23,17 @@
 		</div>
 	</div>
 
-	<header id="header">
+	<header id="header" class="header">
+
 		<nav> 
-			<div id="menuToggle">
-				<input type="checkbox">
+			<div id="menuToggle" class="menuToggle">
+
+				<input type="checkbox" class="check">
 					<span></span>
 					<span></span>
 					<span></span>
-					<ul id="menuBookmarks">
+
+					<ul id="menuBookmarks" class="menuBookmarks">
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="menu.html">MENU</a></li>
 						<li><a href="moments.html">MOMENTS</a></li>
@@ -38,38 +41,47 @@
 						<li><a href="catering.html">CATERING</a></li>
 						<li><a href="contact.html">CONTACT</a></li>
 					</ul>
+
 			</div>
 		</nav>
-		<div class="container-header">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="moments.html">Moments</a></li>
-				<li><a href="ourblog.html">Our Blog</a></li>
-				<li><a href="catering.html">Catering</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+
+		<div class="header__wrapper">
+
+			<a class="header__item" href="index.html">Home</a>
+			<a class="header__item" href="menu.html">Menu</a>
+			<a class="header__item" href="moments.html">Moments</a>
+			<a class="header__item" href="ourblog.html">Our Blog</a>
+			<a class="header__item" href="catering.html">Catering</a>
+			<a class="header__item" href="contact.html">Contact</a>
+		
+			<h1 class="header__logo">
+				Lorem <br>
+				Cafe
+			</h1>
+
 		</div>
-		<div id="logo">
-			<h1>Lorem <br>Cafe</h1>
-		</div>
+
 	</header>
 
 	<div id="slideShow">
+
 		<ul>
 			<li><img class="cover" src="public/img/slide1.jpeg"></li>
 			<li><img class="cover" src="public/img/slide2.jpeg"></li>
 			<li><img class="cover" src="public/img/slide3.jpeg"></li>
 			<li><img class="cover" src="public/img/slide4.jpg"></li>
-			<div class="landing-box">
-			<h1>welcome</h1>
+		</ul>
+
+		<div class="landing-box">
+				<h1>welcome</h1>
 				<div class="divider"></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, beatae.</p>
 				<a class="btn-scroll" href=""><span></span>scroll</a>
 		</div>
-		</ul>
+
 	</div>
-	<div class="img-link-container">
+
+	<section class="img-link-container">
 		<div class="img-link">
 			<div class="overlay"></div>
 			<img src="public/img/600/moments.jpg">
@@ -88,7 +100,7 @@
 			<h2>contact</h2>
 			<a href="contact.html" class="img-btn flex-center">find us</a>
 		</div>
-	</div>
+	</section>
 
 	<article id="home-article">
 		<h1>A few words about us</h1>

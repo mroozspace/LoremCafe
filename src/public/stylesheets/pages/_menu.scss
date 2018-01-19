@@ -1,12 +1,12 @@
 .menu-container{
-	@extend .container;
+	@include container;
 	margin: 20px auto;
 }
 
 .menu-img{
 	width:40%;
 	height:350px;
-	border: 2px solid $first-color;
+	border: 2px solid $orange;
 
 
 	img{

@@ -1,7 +1,11 @@
+// description: 
+// bg - background
+
+
 $bg-color:#222;
 $ft-bg-color: #000;
 
-$first-color:#FF9D00;
+$orange:#FF9D00;
 $bg-lowerContainer-ft: #111;
 $bg-ft: #222;
 
@@ -12,6 +16,28 @@ $logo-color: #fff;
 $partbg-color:#222;
 $part-color:#ffc;
 $header-shadow-color: #fff;
+
+// header
+$header-text-color: #fff;
+$header-text-size: 14px;
+$header-font-weight: 900;
+$header-text-shadow: 0 0 20px #fff;
+$header-text-opacity: 0.8;
+
+	// logo
+	$header-logo-text-color: #fff;
+	$header-logo-font-family: Palatino,Palatino Linotype,Georgia,serif;
+	$header-logo-border: 2px solid white;
+	$header-logo-text-size: 40px;
+	$header-logo-line-height: 32px;
+	$header-logo-text-shadow: 1px 1px 1px $orange;
+
+// $fheader
+	$fheader-border: 1px solid  #111;
+	$fheader-bg: rgba(34, 34, 34, 0.9);
+	$fheader-logo-text-size: 16px;
+
+// header
 
 $breakpoints:(
 	'small'	: 500px,

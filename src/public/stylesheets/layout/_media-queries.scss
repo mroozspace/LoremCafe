@@ -2,9 +2,13 @@
 
 @media screen and (max-width: map-get($breakpoints, small)){
 	
-		#header{
-			.container-header{
+		.header{
+			&__wrapper{
 				padding-left: 0px;
+			}
+			
+			&__item{
+				display:none;
 			}
 		}
 
@@ -30,26 +34,35 @@
 // ======= medium =======
 
 @media screen and (min-width: map-get($breakpoints, medium)){
-		#header #menuToggle{
-		display:none;
+	
+	.header {
+		#menuToggle{
+			display:none;
+		}
+
 	}
 }
 
 @media screen and (max-width: map-get($breakpoints, medium)){
 
-	#header{
-		.container-header ul{
-			display: none;
-		}
-		.fixed-header{
-			padding-top: 10px !important;
-		}
-		#logo{
-		margin: 0 auto;
+	.header{
+
+		&--fixed{
+			.header__logo{
+				left:45%;
+			}	
 		}
 
+		&__logo{
+			left:40%;
+		}
+			
 		#menuToggle{
 			display: block;
+		}
+
+		&__item{
+			display:none;
 		}
 	}
 
@@ -81,8 +94,8 @@
 // ======= xmedium =======
 
 @media screen and (max-width: map-get($breakpoints, xmedium)){
-	#header{
-		.container-header{
+	.header{
+		&__wrapper{
 			padding-left: 10px;
 		}
 		li{ 

@@ -1,97 +1,74 @@
-header{
+.header{
 	position: absolute;
 
 	display:flex;
 	top:0;
 	left:0;
 	right:0;
+
 	z-index: 10;
 	padding-top: 80px;
-	font-weight: 700;
-	font-size: 15px;
-
-	a{
-		text-transform: uppercase;
-		color: $text-color2;
-		flex: 1;
-		transition: 0.3s all;
-		border-bottom: 1px solid transparent;
-		border: 2px solid transparent;
-		opacity:0.9;
-		// text-shadow: 0px 0px 10px $text-color2;
-
-	}
-	a:hover{
-		opacity: 1;
-		text-shadow: 0px 0px 20px $text-color2;
-	}
-
-	ul{
-		margin: 0 auto;
-		padding: 0;
-	}
-
-	li{
-		float:left;
-		margin-left:50px;
-	}
-
+	font-weight: $header-font-weight;
+	font-size: $header-text-size;
 	transition: 0.4s all ease;
-}
 
-.fixed-header{
-	display:flex;
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	z-index:10;
-	padding-top:10px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid $bg-lowerContainer-ft;
-	background-color: $bg-ft;
-	opacity: 0.9;
-	a{
-		color:$text-color2;
-	}
-	// font-size: 14px;
-
-	div{
-		ul{
-			margin-top:5px;
-		}
+	&__wrapper{
+		@include container;
+		padding:0 3%;
+		justify-content: space-around;
 	}
 
-	#logo{
-		h1{
-		font-size:20px;
-		line-height:20px;
-		}
-	}	
-}
+	&__item{
+		display: inline-block;
+		margin-left: 2.5%;
+		height:20px;
+		@include uppercase;
+		color: $header-text-color;
+		transition: 0.3s all;
+		opacity: $header-text-opacity;
 
-#logo{
-	display: inline-flex;
-	float: right;
-	// flex: 3;
-	border-left: 3px solid $text-color2;
-	padding:0;
-	margin:0;
-	max-height:64px;
-	font-family: Palatino,Palatino Linotype,Georgia,serif;
-		h1{
-			margin:0;
-			font-size:40px;
-			line-height: 32px;
-			letter-spacing: 2px;
-			padding-left: 5px;
-			padding-right: 100px;
-			color: $text-color2;
-			text-shadow: 1px 1px 1px $first-color;
-		}
-}
+	}
 
-.container-header{
-	@extend .container;
-	padding-left:50px;
+	&__item:hover{
+		opacity: 1;
+		text-shadow: $header-text-shadow;
+	}
+
+	&__logo{
+
+		position: relative;
+		right: 0;
+
+		font-family: $header-logo-font-family;
+
+		margin:0;
+		padding-left: 5px;
+		padding-right: 25px;
+		letter-spacing: 2px;
+		border-left: $header-logo-border;
+		font-size: $header-logo-text-size;
+		line-height: $header-logo-line-height;
+		color: $header-logo-text-color;
+		text-shadow: $header-logo-text-shadow;
+	}
+
+	&--fixed{
+		position:fixed;
+		padding-top:5px;
+		padding-bottom: 5px;
+		border-bottom: $fheader-border;
+		z-index:10;
+
+		background-color: $fheader-bg;
+
+		.header__item{
+			color:$header-text-color;
+			line-height: 40px;
+		}
+
+		.header__logo{
+			font-size: 16px;
+			line-height:20px;
+		}
+	}
 }

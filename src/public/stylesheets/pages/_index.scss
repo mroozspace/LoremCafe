@@ -1,6 +1,6 @@
 
 	.img-link-container{
-		@extend .container;
+		@include container;
 		height:250px;
 		display:inline-flex;
 
@@ -85,7 +85,7 @@
 	font-size: 30px;
 	font-weight: 900;
 	color: transparent;
-	text-shadow: 0px 0px 2px $first-color;
+	text-shadow: 0px 0px 2px $orange;
 }
 
 .loader__ball:nth-child(2){
@@ -110,8 +110,8 @@
 	position: relative;
 	left: -80%;
 	transform: translateX(300%);
-	background-color: $first-color;
-	box-shadow: 0 0 10px $first-color;
+	background-color: $orange;
+	box-shadow: 0 0 10px $orange;
 	border-radius: 50%;
 	opacity: 0.4;
 }
