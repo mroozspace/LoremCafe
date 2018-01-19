@@ -2,53 +2,37 @@ var loader = document.getElementById("loader");
 var mainSlideShow = document.getElementById('slideShow');
 var images = document.getElementsByTagName("img");
 
-if(mainSlideShow){
 
-	window.addEventListener('load', function(){
+document.onreadystatechange = function(){
+	switch(document.readyState){
+		case "loading":
+			console.log('loading DOM');
+			setTimeout(function(){
+				console.log('loading + timeout');
+			},1000);
 
-		// preload();
-	  closePreload();
+		break;
 
-	});
- 
-// closePreload();
+		case "interactive":
+			console.log('Doc loaded. Changing DOM');
+			setTimeout(function(){
+				console.log('doc loaded + timeout');
+			},2000);
+		break;
 
-
-
-// function preload(){
-// 	document.addEventListener('load', function(){
-// 		console.log('first- starting');
-// 		console.log('doc state : ' +document.readyState);
-
-// 		for(var i=0; i<images.length; i++){
-// 			console.log(images[i]);
-// 			console.log(images[i].complete);
-// 		}
-
-
-// 		if(document.readyState == "complete"){
-// 		console.log('starting');
-// 		closePreload();
-				
-// 			}
-// 	});
-// }
-
-
-
-function closePreload(){
-
-	console.log('closePreload - start');
-	
-	setTimeout(function(){
-		loader.classList.add("fadeOut");
-	},200);
-	
-	setTimeout(function(){
-		loader.style.display="none";
-	},1500);
-	
-	console.log('closePreload - finished');
+		case "complete":
+			console.log('Doc complete');
+			
+			setTimeout(function(){
+			loader.classList.add("fadeOut");
+			console.log('starting fadeout');
+			},2000);
+			
+			setTimeout(function(){
+			console.log('disappear + timeout');
+			loader.style.display = "none"
+			},5000);
+			
+		break;
 	}
-
-}
+};
