@@ -1,3 +1,4 @@
+// scrollDown
 var btnScroll = document.getElementsByClassName("btn-scroll")[0];
 
 btnScroll.addEventListener("click", scrollDown);
@@ -9,3 +10,4 @@ function scrollDown(){
 	  behavior: 'smooth' 
 	});
 }
+// scrollDown
