@@ -9,6 +9,9 @@ html{
 	line-height: 1.8em;
 	color: $text-color;
 }
+p{
+	cursor: default;
+}
 
 *{
 	box-sizing: border-box;
@@ -47,21 +50,6 @@ article{
 		width: 90%;
 	}
 }
-
-.divider{
-	display:block;
-	margin: 0 auto;
-	width: 100px;
-	height:2px;
-	background-color: $orange;
-}
-
-.divider-s{
-	@extend .divider;
-	width: 40px;
-}
-
-
 
 .flex-center{
 	display:flex;

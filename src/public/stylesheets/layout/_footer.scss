@@ -1,6 +1,6 @@
-footer{
+.footer{
 	position: relative;
-	text-transform: uppercase;
+	@include uppercase;
 	bottom:0;
 	left:0;
 	right:0;
@@ -9,30 +9,21 @@ footer{
 	height: 300px;
 	color:#fff;
 
-	#logo-ft{
-		@extend #logo;
-		position:absolute;
+	&__logo{
+		@include logo;
+		@include absolute--center;
+
 		background-color: $bg-ft;
-		margin: 30px auto;
-		max-height: 100px;
-		h1{
-			font-size:45px;
-			line-height: 0.8em;
-			padding:0;
-			margin-left:3px;
-		}
+		padding-left: 5px;
+		line-height: 0.8em;		
 	}
 
-	#logoContainer-ft{
-		display:flex;
-		justify-content: center;
-		width:100%;
-	}
-
-	p{
+	&__text{
 		margin:0 auto;
 		padding:0;
+		font-size: $footer-text-size;
 	}
+
 	div{
 		position:absolute;
 		margin-bottom:0;
@@ -41,45 +32,40 @@ footer{
 		display:block;
 	}
 
-	#addressContainer-ft{
+	&__container{
 		position: absolute;
-		display:flex;
 		width: 100%;
 		bottom: 100px;
 		letter-spacing: 1px;
 		text-align: center;
-		font-weight: 500;
-		font-size: 11px;
 		bottom: 60px;
+
 		i{
-				color: $orange;
-				margin: 5px 10px;
-				opacity:0.85;
+			color: $orange;
+			margin: 5px 10px;
+			opacity:0.85;
 		}
+
 		i:hover{
 			opacity: 1;
 		}
 	}
 
-	#lowerContainer-ft{
+	&__lowerContainer{
 		position: absolute;
 		bottom:0;
 		left:0;
 		right: 0;
+
 		height: 50px;
-		display:flex;
 		line-height:50px;
-		font-weight: 600;
+
+		text-align: center;
+
 		letter-spacing: 3px;
 		font-size: 10px;
+
 		background-color: $bg-lowerContainer-ft;
 		color: $orange;
-		a{
-			transition: text-shadow 0.3s ease;
-		}
-
-		a:hover{
-			text-shadow: 0px 0px 0.1px white;
-		}
 	}
 }

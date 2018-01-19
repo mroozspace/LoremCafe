@@ -1,0 +1,12 @@
+.divider{
+	display:block;
+	margin: 0 auto;
+	width: 100px;
+	height:2px;
+	background-color: $orange;
+}
+
+.divider-s{
+	@extend .divider;
+	width: 40px;
+}

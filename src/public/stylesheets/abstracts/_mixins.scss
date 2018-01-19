@@ -4,6 +4,12 @@
 	align-items: center;
 }
 
+@mixin absolute--center{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 @mixin uppercase{
 	text-transform: uppercase;
 }
@@ -12,6 +18,15 @@
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
+}
+
+@mixin logo{
+	font-family: $header-logo-font-family;
+	border-left: $header-logo-border;
+	font-size: $header-logo-text-size;
+	line-height: $header-logo-line-height;
+	color: $header-logo-text-color;
+	text-shadow: $header-logo-text-shadow;
 }
 
 // @mixin container-center{

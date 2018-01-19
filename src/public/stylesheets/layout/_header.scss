@@ -27,6 +27,12 @@
 		transition: 0.3s all;
 		opacity: $header-text-opacity;
 
+			&--active{
+				opacity: 1;
+				text-shadow: $header-text-shadow;
+				pointer-events: none;
+			}
+
 	}
 
 	&__item:hover{
@@ -39,17 +45,11 @@
 		position: relative;
 		right: 0;
 
-		font-family: $header-logo-font-family;
-
 		margin:0;
 		padding-left: 5px;
 		padding-right: 25px;
 		letter-spacing: 2px;
-		border-left: $header-logo-border;
-		font-size: $header-logo-text-size;
-		line-height: $header-logo-line-height;
-		color: $header-logo-text-color;
-		text-shadow: $header-logo-text-shadow;
+		@include logo;
 	}
 
 	&--fixed{
