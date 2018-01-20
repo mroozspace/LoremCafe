@@ -66,26 +66,26 @@
 		}
 	}
 
-	.img-link-container{
-		height: 750px !important;
+	.img-section{
+		height: 750px;
 
-		.img-link{
+		&__link{
 			height: 33.3333%;
 			width: 100%;
+			
+			&:hover .img-section__caption{
+			transform: none;
+			}
 		}
-
-		.img-link:hover h2{
-			transform:none;
-		}
-
-		.img-link .overlay{
+		
+		&__link .img-section__overlay{
 			background: rgba(0, 0, 0, 0.2);
 	  	}
 
-	  	.img-link .img-btn{
+	  	&__link .img-section__btn{
 			opacity: 1;
 	  	}
-	  	.img-link h2{
+	  	&__caption{
 			top:50px;
 	  	}
   	}
@@ -98,10 +98,8 @@
 		&__wrapper{
 			padding-left: 10px;
 		}
-		li{ 
-			margin-left: 15px;
-		}
-		#logo h1{
+
+		&__logo{
 			padding-right: 30px;
 		}		
 	}

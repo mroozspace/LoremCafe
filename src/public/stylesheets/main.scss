@@ -4,21 +4,19 @@
 		'abstracts/functions',
 		'abstracts/mixins';
 
-// @import 'vendors ...';
-
 @import 'base/base',
 		'base/typography',
 		'base/animations';
 
 @import 'layout/header',
 		'layout/footer',
-		'layout/form',
-		'layout/media-queries';
+		'layout/form';
 
 @import 'components/buttons',
 		'components/burger',
 		'components/slideShow',
 		'components/divider',
+		'components/loader',
 		'components/modal';
 
 @import 'pages/index',
@@ -29,3 +27,5 @@
 		'pages/menu';
 
 @import 'themes/theme';
+		
+@import 'layout/media-queries';

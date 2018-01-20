@@ -12,6 +12,8 @@
 	font-size: $header-text-size;
 	transition: 0.4s all ease;
 
+	text-shadow: $header-logo-text-shadow;
+
 	&__wrapper{
 		@include container;
 		padding:0 3%;
@@ -54,8 +56,7 @@
 
 	&--fixed{
 		position:fixed;
-		padding-top:5px;
-		padding-bottom: 5px;
+		padding: 3px 0;
 		border-bottom: $fheader-border;
 		z-index:10;
 
@@ -63,12 +64,12 @@
 
 		.header__item{
 			color:$header-text-color;
-			line-height: 40px;
+			line-height: double($fheader-logo-line-height);
 		}
 
 		.header__logo{
 			font-size: 16px;
-			line-height:20px;
+			line-height: $fheader-logo-line-height;
 		}
 	}
 }
