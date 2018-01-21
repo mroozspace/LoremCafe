@@ -2,7 +2,6 @@
 .img-section{
 	@include container;
 	height:250px;
-	// display:inline-flex;
 
 	&__link{
 		display:inline-flex;
@@ -59,8 +58,4 @@
 		transition: transform 0.5s ease;
 	}
 		
-}
-
-.home-article{
-	max-width: 600px;
 }

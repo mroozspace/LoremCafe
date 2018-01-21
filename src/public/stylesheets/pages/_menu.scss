@@ -1,22 +1,26 @@
-.menu-container{
+.foodmenu{
 	@include container;
 	margin: 20px auto;
 }
 
-.menu-img{
+.foodmenu-img-container{
 	width:40%;
 	height:350px;
 	border: 2px solid $orange;
 
-
-	img{
+	&__img{
 		height:100%;
 		width:100%;
 		object-fit:cover;
+
+		transition: all 0.5s ease;
+		&:hover{
+			opacity: 0.9;
+		}
 	}
 }
 
-.menu-description-l{
+.foodmenu__desc{
 	p{ width: 100% ;}
 	display:block;
 	margin-left: 40px;
@@ -34,23 +38,10 @@
 	dt{
 		font-weight: 600;
 	}
-}
 
-.menu-description-r{
-	@extend .menu-description-l;
-	order: -1;
-	margin-left: 0px;
-	margin-right: 40px;
-	.menu-img{
-		order:2;
+	&--left{
+		order: -1;
+		margin-left: 0px;
+		margin-right: 40px;
 	}
-}
-
-.menu-img{
-	transition: all 0.5s ease;
-
-}
-
-.menu-img:hover{
-	opacity: 0.9;
 }

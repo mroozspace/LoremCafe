@@ -1,0 +1,36 @@
+.landing{
+	width:100%;
+	height: 100vh;
+
+	&__img{
+		width:100%;
+		height: 100%;
+		object-fit: cover;
+		filter: brightness(90%);
+
+	}
+}
+
+.landing__box{
+
+	max-width: 1000px;
+
+	position: absolute;
+	
+	top: 50%;
+    left: 50%;    
+    transform: translate(-50%,-50%);
+
+	padding: 20px;
+	border-radius: 25px;
+
+	text-align: center;
+
+	background-color: rgba(0, 0, 0, 0.6);
+	color:$text-color2;
+	
+	&__header{
+		margin-top:0;
+	}
+
+}

@@ -1,7 +1,7 @@
 // ======= small =======
 
 @media screen and (max-width: map-get($breakpoints, small)){
-	
+
 		.header{
 			&__wrapper{
 				padding-left: 0px;
@@ -12,22 +12,25 @@
 			}
 		}
 
-		.menu-container{
-			.menu-img{
+		.foodmenu{
+			&-img-container{
 				width: 100%;
 				margin: 10px 0;
 			}
 
-			.menu-description-l{
+			&__desc{
 				width: 100%;
 				margin: 0;
+
+				&--left{
+					order:1;
+				}
 			}
+
 			dt{
 				max-width: 100px;
 			}
-			.menu-description-r{
-				order:1;
-			}
+
 		}
 }
 
@@ -54,7 +57,7 @@
 		}
 
 		&__logo{
-			left:40%;
+			left:30%;
 		}
 			
 		#menuToggle{
