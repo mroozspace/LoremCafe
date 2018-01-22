@@ -1,28 +1,29 @@
 /* ======== Form ========*/
-form{
-	.contact .contact-form{
-		display: inline-block;
-		float: right;
-		padding: 15px;
-		background-color: #999999;
-		margin-top: 20px;
-		border: 2px solid #fff;
 
-		input,textarea,button{
-			outline-color: $orange;
-			// width: 70%;
-		}
+	// .contact .contact-form{
+	// 	display: inline-block;
+	// 	float: right;
+	// 	padding: 15px;
+	// 	background-color: #999999;
+	// 	margin-top: 20px;
+	// 	border: 2px solid #fff;
 
-		.three{
-			width: 33.333333%;
-		}
-	}
-}
-.contact-form{
+	// 	input,textarea,button{
+	// 		outline-color: $orange;
+	// 		// width: 70%;
+	// 	}
+
+	// 	.three{
+	// 		width: 33.333333%;
+	// 	}
+	// }
+
+.form{
 	width: 70%;
 	text-align: center;
 	margin: 20px auto;
-	input,textarea{
+
+	&__text,&__textfield{
 		text-transform:uppercase;
 		text-align:inherit;
 		border:none;
@@ -38,41 +39,47 @@ form{
 		margin: 10px auto;
 		transition: all 0.5s ease;
 	}
-	input{
+	&__text{
 		height: 50px;
+		&--s{
+			width: 26.45%;
+		}
 	}
-	textarea{
+	&__textfield{
 		min-height: 120px;
 	}
 
-	input:focus, textarea:focus{
+	&__text:focus, &__textfield:focus{
 		// outline: 2px solid $orange;
 		box-shadow: 0 2px 10px 1px $orange;
 	}
-	input[type="submit"]{
-		background:none;
-		cursor:pointer;
-		border: 1px solid $orange;
+	// input[type="submit"]{
+
+	&__submit{
+	background:none;
+	cursor:pointer;
+	border: 1px solid $orange;
+		&:hover{
+			box-shadow: 0 2px 10px 1px $orange;
+		}
 	}
 
-	input[type="submit"]:hover{
-		box-shadow: 0 2px 10px 1px $orange;
-	}
+		
 }
 
-.contact .contact-form textarea{
-	height: 130px;
-}
+// .contact .contact-form textarea{
+// 	height: 130px;
+// }
 
-.contact .contact-form button{
-	height: 40px;
-	background-color: $orange;
-	border: 2px solid #fff;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
+// .contact .contact-form button{
+// 	height: 40px;
+// 	background-color: $orange;
+// 	border: 2px solid #fff;
+// 	color: #fff;
+// 	text-transform: uppercase;
+// 	letter-spacing: 1px;
+// }
 
-.contact .contact-form button:active{
-    filter: invert(10%);
-}
+// .contact .contact-form button:active{
+//     filter: invert(10%);
+// }
