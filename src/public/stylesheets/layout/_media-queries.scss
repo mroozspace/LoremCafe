@@ -39,6 +39,28 @@
 		}
 }
 
+@media screen and (max-width: map-get($breakpoints, medium)) and (orientation: landscape) {
+	
+	#slideShow{
+		height: 200vh;
+			.cover{
+				height: 200vh;
+			}
+	}
+	
+	.landing{
+		height: 200vh;
+
+		&__box{
+			top: 100%;
+		}
+	}
+	.bookmarks__item{
+		margin: 10px 0;
+	}
+	
+}
+
 // ======= medium =======
 
 @media screen and (min-width: map-get($breakpoints, medium)){
