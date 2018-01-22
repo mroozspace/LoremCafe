@@ -42,21 +42,6 @@ h1,h2,h3{
 	line-height: 1.1em;
 }
 
-
-.flex-center{
-	display:flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.flex-center-around-wrap{
-	@extend .flex-center;
-	justify-content: space-around;
-	flex-wrap:wrap;
-}
-
-
-
 .no-scroll{
 	overflow: hidden;
 }

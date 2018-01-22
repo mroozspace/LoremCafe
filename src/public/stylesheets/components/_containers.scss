@@ -1,0 +1,15 @@
+.flex-center{
+	@include flex--center;
+}
+
+.flex-center-around-wrap{
+	@include flex--center;
+	justify-content: space-around;
+	flex-wrap:wrap;
+
+	&--w80{
+		width:80%;
+		margin: 0 auto;
+	}
+}
+
