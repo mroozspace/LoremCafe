@@ -9,6 +9,14 @@
 		filter: brightness(90%);
 
 	}
+
+	&--blog{
+		@include flex--center;
+
+		background-image: url("../../img/blog1.jpeg");
+		background-size:cover;
+
+	}
 }
 
 .landing__box{
